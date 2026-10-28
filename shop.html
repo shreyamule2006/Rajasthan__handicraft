@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shop | Rajasthan Handicrafts</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header class="header"><a class="brand" href="index.html"><span class="logo">RH</span><span
+                class="brand-copy">Rajasthan<strong>Handicrafts</strong></span></a>
+        <nav class="nav"><a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a
+                href="index.html#our-story">Our story</a><a href="contact.html">Contact</a></nav>
+        <div class="header-actions"><a class="icon-link login-link" href="login.html">♙</a><a class="icon-link"
+                href="checkout.html">🛍<b class="cart-count">0</b></a></div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <p class="breadcrumbs">Home / Shop</p>
+            <h1 style="font-size:clamp(2.6rem,5vw,4.2rem);margin-bottom:12px">The collection</h1>
+            <p>Objects shaped by tradition, selected for your everyday rituals.</p>
+        </section>
+        <div class="container shop-layout">
+            <aside class="filters">
+                <h2 class="filter-title">Filter by craft</h2>
+                <div class="filter-group"><label><input type="checkbox" data-filter value="Pottery"> Blue
+                        Pottery</label><label><input type="checkbox" data-filter value="Textiles"> Textiles &amp;
+                        Wear</label><label><input type="checkbox" data-filter value="Decor"> Home
+                        Decor</label><label><input type="checkbox" data-filter value="Accessories">
+                        Accessories</label><label><input type="checkbox" data-filter value="Gifts"> Gifts</label></div>
+                <div class="filter-group">
+                    <h2 class="filter-title">Price range</h2><label><input id="price-filter" type="range" min="500"
+                            max="3000" value="3000"> Up to ₹3,000</label>
+                </div>
+            </aside>
+            <section>
+                <div class="shop-tools">
+                    <p id="result-count">Products found</p><select id="sort" class="sort-select"
+                        aria-label="Sort products">
+                        <option value="featured">Sort: Featured</option>
+                        <option value="low">Price: Low to high</option>
+                        <option value="high">Price: High to low</option>
+                    </select>
+                </div>
+                <div class="product-grid" id="shop-products"></div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-bottom"><span>© 2026 Rajasthan Handicrafts. All rights reserved.</span><a
+                href="contact.html">Need help?</a></div>
+    </footer>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>

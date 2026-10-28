@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Checkout | Rajasthan Handicrafts</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header class="header"><a class="brand" href="index.html"><span class="logo">RH</span><span
+                class="brand-copy">Rajasthan<strong>Handicrafts</strong></span></a>
+        <nav class="nav"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions"><a class="icon-link" href="checkout.html">🛍<b class="cart-count">0</b></a></div>
+    </header>
+    <main class="container form-page">
+        <section class="panel">
+            <p class="eyebrow">Secure checkout</p>
+            <h1 style="font-size:2.5rem">Delivery details</h1>
+            <form data-demo-form
+                data-message="Thank you! Your order request was received. We will contact you to confirm it shortly.">
+                <div class="field-grid">
+                    <div class="field"><label for="first">First name</label><input id="first" required></div>
+                    <div class="field"><label for="last">Last name</label><input id="last" required></div>
+                </div>
+                <div class="field"><label for="email">Email address</label><input id="email" type="email" required>
+                </div>
+                <div class="field"><label for="phone">Phone number</label><input id="phone" type="tel" required></div>
+                <div class="field"><label for="address">Street address</label><textarea id="address"
+                        required></textarea></div>
+                <div class="field-grid">
+                    <div class="field"><label for="city">City</label><input id="city" required></div>
+                    <div class="field"><label for="pin">PIN code</label><input id="pin" required></div>
+                </div>
+                <div class="field"><label for="payment">Payment preference</label><select id="payment">
+                        <option>UPI / Online payment</option>
+                        <option>Cash on delivery</option>
+                        <option>Bank transfer</option>
+                    </select></div><button class="btn btn-primary btn-full">Place order request →</button>
+                <div id="form-notice" class="notice"></div>
+            </form>
+        </section>
+        <aside class="panel">
+            <h2>Your order</h2>
+            <div id="order-lines"></div>
+            <div class="order-total"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+            <p style="margin:16px 0 0;color:var(--muted);font-size:.78rem">Shipping is calculated after delivery address
+                confirmation. Secure payment details will be shared after order confirmation.</p>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="container footer-bottom"><span>Questions? <a href="contact.html">Contact us</a></span><span>Handmade
+                with care in Rajasthan</span></div>
+    </footer>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
